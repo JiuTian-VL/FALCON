@@ -17,8 +17,7 @@
 †Corresponding author
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-xxxx.svg?logo=arxiv)](https://arxiv.org/abs/xxxx)
-
+[![arXiv](https://img.shields.io/badge/arXiv-2501.16297-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2501.16297)
 
 </div>
 
@@ -27,7 +26,7 @@
 ## If you find this work useful for your research, please kindly cite our paper and star our repo.
 
 ## Updates
-- [11/2024] :fire: Details will be released. Stay tuned.
+- [01/2025] [Arxiv paper](https://arxiv.org/abs/2501.16297) released.
 
 ## Introduction
 
@@ -44,3 +43,15 @@ The framework of the proposed FALCON model:
 ## Citation
 
 If you find this work useful for your research, please kindly cite our paper:
+
+```
+@misc{zhang2025falcon,
+      title={FALCON: Resolving Visual Redundancy and Fragmentation in High-resolution Multimodal Large Language Models via Visual Registers}, 
+      author={Renshan Zhang and Rui Shao and Gongwei Chen and Kaiwen Zhou and Weili Guan and Liqiang Nie},
+      year={2025},
+      eprint={2501.16297},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2501.16297}, 
+}
+```
