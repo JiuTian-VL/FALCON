@@ -47,7 +47,7 @@ If you find this work useful for your research, please kindly cite our paper:
 
 ```
 @InProceedings{zhang2025falcon,
-    author={Zhang, Renshan and Shao, Rui and Chen, Gongwei and Zhou, Kaiwen and Guan, Weili and Zhang, Miao and Nie, Liqiang},
+    author={Zhang, Renshan and Shao, Rui and Chen, Gongwei and Zhang, Miao and Zhou, Kaiwen and Guan, Weili and Nie, Liqiang},
     title={FALCON: Resolving Visual Redundancy and Fragmentation in High-resolution Multimodal Large Language Models via Visual Registers},
     booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
     month= {October},
