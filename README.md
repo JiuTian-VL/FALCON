@@ -5,11 +5,12 @@
 <div>
 <div>
     <a href="https://scholar.google.com/citations?user=iMJYtvwAAAAJ" target="_blank">Renshan Zhang</a><sup>1</sup>,
-    <a href="https://scholar.google.com/citations?user=9Vc--XsAAAAJ&hl=en&oi=ao" target="_blank">Rui Shao</a><sup>1</sup>†,
+    <a href="https://rshaojimmy.github.io/OrionLab/" target="_blank">Rui Shao</a><sup>1</sup>†,
     <a href="https://scholar.google.com/citations?user=Mpg0w3cAAAAJ" target="_blank">Gongwei Chen</a><sup>1</sup>,
+    <a href="https://faculty.hitsz.edu.cn/zhangmiao">Miao Zhang</a><sup>1</sup>,
     <a href="https://faculty.hitsz.edu.cn/guanweili" target="_blank">Weili Guan</a><sup>1</sup>,
-    <a href="https://openreview.net/profile?id=~Kaiwen_Zhou2" target="_blank">Kaiwen Zhou</a><sup>2</sup>,
-    <a href="https://scholar.google.com/citations?hl=en&user=yywVMhUAAAAJ" target="_blank">Liqiang Nie</a><sup>1</sup>†
+    <a href="https://jnhujnhu.github.io/" target="_blank">Kaiwen Zhou</a><sup>2</sup>,
+    <a href="https://liqiangnie.github.io/index.html" target="_blank">Liqiang Nie</a><sup>1</sup>†
 </div>
 
 <sup>1</sup>Harbin Institute of Technology, Shenzhen<br>
@@ -18,6 +19,7 @@
 
 
 [![arXiv](https://img.shields.io/badge/arXiv-2501.16297-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2501.16297)
+[![project page](https://img.shields.io/badge/Project-FALCON-9cf)](https://jiutian-vl.github.io/FALCON.github.io/)
 
 </div>
 
@@ -25,21 +27,67 @@
 
 ## If you find this work useful for your research, please kindly cite our paper and star our repo.
 
-## :fire: Details will be released. Stay tuned.
-
 ## Updates
-- [06/2025] FALCON is accepted to **ICCV 2025**! The code and paper will be updated soon.
-- [01/2025] [Arxiv paper](https://arxiv.org/abs/2501.16297) released.
+- [07/2025] :fire: The code and [project page](https://jiutian-vl.github.io/FALCON.github.io/) are released. Enjoy it!
+- [06/2025] :fire: The [arXiv paper](https://arxiv.org/abs/2501.16297) is updated.
+- [06/2025] FALCON is accepted to **ICCV 2025**!
+- [01/2025] [arXiv paper](https://arxiv.org/abs/2501.16297) released.
 
 ## Introduction
 
 This is the github repository of *FALCON: Resolving Visual Redundancy and Fragmentation in High-resolution Multimodal Large Language Models via Visual Registers*. In this work, we propose the FALCON model, which introduces a novel visual register technique to simultaneously address the issues of visual redundancy and fragmentation in the high-resolution visual encoding of MLLMs.
 
-The framework of the proposed FALCON model:
-
 <div align="center">
 <img src='assets/FALCON_arch.png' width='100%'>
 </div>
+
+## Installation
+
+1. Clone this repository and navigate to the folder
+```bash
+git clone git@github.com:JiuTian-VL/JiuTian-FALCON.git
+cd falcon
+```
+
+2. Install Package
+```Shell
+conda create -n falcon python=3.10 -y
+conda activate falcon
+pip install --upgrade pip
+pip install -e .
+```
+
+3. Install additional packages for training cases
+```
+pip install -e ".[train]"
+pip install flash-attn --no-build-isolation
+```
+
+## Quick Start
+
+We have developed a well-encapsulated class `JiutianHDInfer` specifically designed for model inference in `jiutian/eval/model_infer.py`.
+
+Below is an example of how to use the `JiutianHDInfer` class. By calling the `inference` method, you can easily obtain the model's inference results.
+
+```python
+from jiutian.eval.model_infer import JiutianHDInfer
+
+model_infer = JiutianHDInfer(
+    model_path='/path/to/ckpt',
+    model_base='/path/to/base_ckpt or None',
+    conv_mode='llama_3_1',
+)
+
+image_file = '/path/to/image'
+question = 'question'
+model_infer.inference(image_file, question)
+```
+
+## Evaluations
+
+See `docs/Evaluation.md` for details.
+
+The Model weights are coming soon ...
 
 ## Citation
 
