@@ -94,11 +94,11 @@ The Model weights are coming soon ...
 If you find this work useful for your research, please kindly cite our paper:
 
 ```
-@InProceedings{zhang2025falcon,
-    author={Zhang, Renshan and Shao, Rui and Chen, Gongwei and Zhang, Miao and Zhou, Kaiwen and Guan, Weili and Nie, Liqiang},
-    title={FALCON: Resolving Visual Redundancy and Fragmentation in High-resolution Multimodal Large Language Models via Visual Registers},
-    booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month= {October},
-    year={2025},
+@inproceedings{zhang2025falcon,
+  title={Falcon: Resolving visual redundancy and fragmentation in high-resolution multimodal large language models via visual registers},
+  author={Zhang, Renshan and Shao, Rui and Chen, Gongwei and Zhang, Miao and Zhou, Kaiwen and Guan, Weili and Nie, Liqiang},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={23530--23540},
+  year={2025}
 }
 ```
