@@ -48,7 +48,7 @@ def load_pretrained_model(model_path, model_base, model_name, load_8bit=False, l
     if use_flash_attn:
         kwargs['attn_implementation'] = 'flash_attention_2'
 
-    if 'jiutian' in model_name.lower():
+    if 'jiutian' in model_name.lower() or 'falcon' in model_name.lower():
         # Load Jiutian model
         if 'lora' in model_name.lower() and model_base is None:
             warnings.warn('There is `lora` in model name but no `model_base` is provided. If you are loading a LoRA model, please provide the `model_base` argument.')

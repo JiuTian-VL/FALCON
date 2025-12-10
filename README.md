@@ -20,6 +20,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2501.16297-b31b1b.svg?logo=arxiv)](https://arxiv.org/abs/2501.16297)
 [![project page](https://img.shields.io/badge/Project-FALCON-9cf)](https://jiutian-vl.github.io/FALCON.github.io/)
+[![FALCON-8B](https://img.shields.io/badge/HF_Model-FALCON_8B-yellow)](https://huggingface.co/renns/Falcon-8B)
 
 </div>
 
@@ -28,6 +29,7 @@
 ## If you find this work useful for your research, please kindly cite our paper and star our repo.
 
 ## Updates
+- [12/2025] :fire: [Checkpoint](https://huggingface.co/renns/Falcon-8B) released. Enjoy it!
 - [07/2025] :fire: The code and [project page](https://jiutian-vl.github.io/FALCON.github.io/) are released. Enjoy it!
 - [06/2025] :fire: The [arXiv paper](https://arxiv.org/abs/2501.16297) is updated.
 - [06/2025] FALCON is accepted to **ICCV 2025**!
@@ -86,8 +88,6 @@ model_infer.inference(image_file, question)
 ## Evaluations
 
 See `docs/Evaluation.md` for details.
-
-The Model weights are coming soon ...
 
 ## Citation
 
